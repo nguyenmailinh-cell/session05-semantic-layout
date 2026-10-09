@@ -1,0 +1,160 @@
+
+/* 1. General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f4f6f9;
+}
+
+/* 2. Header */
+header {
+    background-color: #1f3a5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* 3. Navigation */
+nav {
+    width: 100%;
+    background-color: #294b75;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    background-color: #294b75;
+    text-decoration: none;
+    padding: 14px 24px;
+    font-size: 18px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #16304f;
+    color: #ffffff;
+}
+
+/* 4. Main content and sidebar */
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+    align-items: stretch;
+}
+
+main {
+    flex: 7;
+    min-width: 0;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+aside {
+    flex: 3;
+    min-width: 0;
+    background-color: #e2eaf4;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+main h2,
+aside h2 {
+    margin-bottom: 15px;
+}
+
+main p,
+aside p {
+    margin-bottom: 15px;
+}
+
+main section {
+    margin-top: 25px;
+}
+
+/* 5. Sidebar links */
+aside a {
+    color: #1f3a5f;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* 6. Footer */
+footer {
+    width: 100%;
+    background-color: #1f3a5f;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #f9d976;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 7. Responsive layout */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: row;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: auto;
+    }
+
+    nav ul li a {
+        width: auto;
+    }
+}
